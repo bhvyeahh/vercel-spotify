@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container flex bg-black">
+      <div class="left">
+        <div class="home rounded bg-grey m-1 p-1">
+          <div class="logo">
+            <img class="invert" src="logo.svg" alt="" />
+          </div>
+          <ul>
+            <li><img class="invert" src="home.svg" alt="home" />Home</li>
+            <li><img class="invert" src="search.svg" alt="home" />Search</li>
+          </ul>
+        </div>
+        <div class="library bg-grey rounded m-1 p-1">
+          <div class="heading">
+            <img class="invert" src="playlist.svg" alt="" />
+            <h2>Your Library</h2>
+          </div>
+          <div class="songlist bg-grey rounded">
+            <ul></ul>
+          </div>
+        </div>
+        <div class="footer m-1 p-1 rounded">
+          <a href="https://www.spotify.com/in-en/legal/">Legal</a>
+          <a href="https://www.spotify.com/in-en/safetyandprivacy/"
+            >Safety &amp; Privacy Center</a
+          >
+          <a href="https://www.spotify.com/in-en/legal/privacy-policy/"
+            >Privacy Policy</a
+          >
+          <a href="https://www.spotify.com/in-en/legal/cookies-policy/"
+            >Cookies</a
+          >
+          <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+            >About Ads</a
+          >
+          <a href="https://www.spotify.com/in-en/accessibility/"
+            >Accessibility</a
+          >
+          <a
+            href="https://www.spotify.com/legal/cookies-policy/"
+            target="_blank"
+            rel="noopener"
+            >Cookies</a
+          >
+        </div>
+      </div>
+      <div class="right">
+        <div class="header rounded m-1 bg-grey p-1">
+          <div class="nav">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              color="#ffffff"
+              fill="none"
+            >
+              <path
+                d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              color="#ffffff"
+              fill="none"
+            >
+              <path
+                d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="button">
+            <button class="signupbtn">Sign Up</button>
+            <button class="loginbtn">Log in</button>
+          </div>
+        </div>
+        <div class="Artists">
+          <h1>Popular artists</h1>
+        </div>
+        <div class="cardcontainer">
+          <div class="card">
+            <div class="play">
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                <!-- Circle background -->
+                <circle cx="25" cy="25" r="22" fill="#1fdf64"></circle>
+                <!-- Play button (triangle) -->
+                <polygon points="20,15 35,25 20,35" fill="black"></polygon>
+              </svg>
+            </div>
+            <img
+              src="artists img/ab676161000051744293385d324db8558179afd9.jpeg"
+              alt=""
+            />
+            <h3>Drake</h3>
+            <p>Artist</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                <!-- Circle background -->
+                <circle cx="25" cy="25" r="22" fill="#1fdf64"></circle>
+                <!-- Play button (triangle) -->
+                <polygon points="20,15 35,25 20,35" fill="black"></polygon>
+              </svg>
+            </div>
+            <img
+              src="artists img/ab67616100005174e17c0aa1714a03d62b5ce4e0.jpeg"
+              alt=""
+            />
+            <h3>Post Malone</h3>
+            <p>Artist</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                <!-- Circle background -->
+                <circle cx="25" cy="25" r="22" fill="#1fdf64"></circle>
+                <!-- Play button (triangle) -->
+                <polygon points="20,15 35,25 20,35" fill="black"></polygon>
+              </svg>
+            </div>
+            <img
+              src="https://i.scdn.co/image/ab676161000051747a1fba1bb3618ef71355f82a"
+              alt=""
+            />
+            <h3>Zayn</h3>
+            <p>Artist</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                <!-- Circle background -->
+                <circle cx="25" cy="25" r="22" fill="#1fdf64"></circle>
+                <!-- Play button (triangle) -->
+                <polygon points="20,15 35,25 20,35" fill="black"></polygon>
+              </svg>
+            </div>
+            <img
+              src="artists img/ab676161000051743fabb44dc3b3dcfc1a366298.jpeg"
+              alt=""
+            />
+            <h3>Karan Aujla</h3>
+            <p>Artist</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                <!-- Circle background -->
+                <circle cx="25" cy="25" r="22" fill="#1fdf64"></circle>
+                <!-- Play button (triangle) -->
+                <polygon points="20,15 35,25 20,35" fill="black"></polygon>
+              </svg>
+            </div>
+            <img
+              src="artists img/ab67616100005174b796c0db7acaf3f1b71d1e3b.jpeg"
+              alt=""/>
+            <h3>G-Eazy</h3>
+            <p>Artist</p>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+
+
+
+
+          <div class="card">
+            <div class="play">
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                <!-- Circle background -->
+                <circle cx="25" cy="25" r="22" fill="#1fdf64"></circle>
+                <!-- Play button (triangle) -->
+                <polygon points="20,15 35,25 20,35" fill="black"></polygon>
+              </svg>
+            </div>
+            <img
+              src="artists img/ab67616100005174b796c0db7acaf3f1b71d1e3b.jpeg"
+              alt=""/>
+            <h3>G-Eazy</h3>
+            <p>Artist</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                <!-- Circle background -->
+                <circle cx="25" cy="25" r="22" fill="#1fdf64"></circle>
+                <!-- Play button (triangle) -->
+                <polygon points="20,15 35,25 20,35" fill="black"></polygon>
+              </svg>
+            </div>
+            <img
+              src="artists img/ab67616100005174b796c0db7acaf3f1b71d1e3b.jpeg"
+              alt=""/>
+            <h3>G-Eazy</h3>
+            <p>Artist</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                <!-- Circle background -->
+                <circle cx="25" cy="25" r="22" fill="#1fdf64"></circle>
+                <!-- Play button (triangle) -->
+                <polygon points="20,15 35,25 20,35" fill="black"></polygon>
+              </svg>
+            </div>
+            <img
+              src="artists img/ab67616100005174b796c0db7acaf3f1b71d1e3b.jpeg"
+              alt=""/>
+            <h3>G-Eazy</h3>
+            <p>Artist</p>
+          </div><div class="card">
+            <div class="play">
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                <!-- Circle background -->
+                <circle cx="25" cy="25" r="22" fill="#1fdf64"></circle>
+                <!-- Play button (triangle) -->
+                <polygon points="20,15 35,25 20,35" fill="black"></polygon>
+              </svg>
+            </div>
+            <img
+              src="artists img/ab67616100005174b796c0db7acaf3f1b71d1e3b.jpeg"
+              alt=""/>
+            <h3>G-Eazy</h3>
+            <p>Artist</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                <!-- Circle background -->
+                <circle cx="25" cy="25" r="22" fill="#1fdf64"></circle>
+                <!-- Play button (triangle) -->
+                <polygon points="20,15 35,25 20,35" fill="black"></polygon>
+              </svg>
+            </div>
+            <img
+              src="artists img/ab67616100005174b796c0db7acaf3f1b71d1e3b.jpeg"
+              alt=""/>
+            <h3>G-Eazy</h3>
+            <p>Artist</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                <!-- Circle background -->
+                <circle cx="25" cy="25" r="22" fill="#1fdf64"></circle>
+                <!-- Play button (triangle) -->
+                <polygon points="20,15 35,25 20,35" fill="black"></polygon>
+              </svg>
+            </div>
+            <img
+              src="artists img/ab67616100005174b796c0db7acaf3f1b71d1e3b.jpeg"
+              alt=""/>
+            <h3>G-Eazy</h3>
+            <p>Artist</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                <!-- Circle background -->
+                <circle cx="25" cy="25" r="22" fill="#1fdf64"></circle>
+                <!-- Play button (triangle) -->
+                <polygon points="20,15 35,25 20,35" fill="black"></polygon>
+              </svg>
+            </div>
+            <img
+              src="artists img/ab67616100005174b796c0db7acaf3f1b71d1e3b.jpeg"
+              alt=""/>
+            <h3>G-Eazy</h3>
+            <p>Artist</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                <!-- Circle background -->
+                <circle cx="25" cy="25" r="22" fill="#1fdf64"></circle>
+                <!-- Play button (triangle) -->
+                <polygon points="20,15 35,25 20,35" fill="black"></polygon>
+              </svg>
+            </div>
+            <img
+              src="artists img/ab67616100005174b796c0db7acaf3f1b71d1e3b.jpeg"
+              alt=""/>
+            <h3>G-Eazy</h3>
+            <p>Artist</p>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="card">
+            <div class="play">
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                <!-- Circle background -->
+                <circle cx="25" cy="25" r="22" fill="#1fdf64"></circle>
+                <!-- Play button (triangle) -->
+                <polygon points="20,15 35,25 20,35" fill="black"></polygon>
+              </svg>
+            </div>
+            <img
+              src="artists img/ab67616100005174214f3cf1cbe7139c1e26ffbb.jpeg"
+              alt=""
+            />
+            <h3>The Weeknd</h3>
+            <p>Artist</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                <!-- Circle background -->
+                <circle cx="25" cy="25" r="22" fill="#1fdf64"></circle>
+                <!-- Play button (triangle) -->
+                <polygon points="20,15 35,25 20,35" fill="black"></polygon>
+              </svg>
+            </div>
+            <img
+              src="artists img/ab676161000051748ae7f2aaa9817a704a87ea36.jpeg"
+              alt=""
+            />
+            <h3>Justin Bieber</h3>
+            <p>Artist</p>
+          </div>
+        </div>
+        <div class="playbar bg-grey">
+          <div class="seekbar">
+            <div class="circle"></div>
+          </div>
+          <div class="songinfo">
+            <div class="trackname">Track</div>
+            <div class="songbuttons invert">
+              <img id="previous" src="previous.svg" alt="" />
+              <img id="play" src="play.svg" alt="" />
+              <img id="next" src="next.svg" alt="" />
+            </div>
+            <div class="songtime">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
