@@ -300,5 +300,27 @@ padding: 0;
     .logo .close{
         display: block;
     }
+    .nav svg{
+        display: none;
+    }
+    .cardcontainer{
+        display: flex;
+        /* gap: 0px 18px; */
+        justify-content: space-around;
+        align-items: center;
+        height: 75vh;
+    }
+    .trackname{
+        font-size: 12px;
+    }
+    .songbuttons{
+        gap: 10px;
+    }
+    .playbar{
+        gap: 45px;
+    }
+    .songbuttons img{
+        width: 20px;
+    }
 
 }
