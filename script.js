@@ -46,7 +46,7 @@ async function getsongs(folder) {
               ${song.replaceAll("%20", " ")}
                 </div>
                 <div class="songArtist">
-                  Bhavya
+                
                 </div>
               </div>
               <div class="playnow">
@@ -75,21 +75,21 @@ const playMusic = (track, pause = false)=>{
 }
 
 async function displayAlbums(){
-  let a = await fetch(`/Spotify/songs/`);
+  let a = await fetch(`/songs/`);
   let response = await a.text();
   // console.log(response) 
   let div = document.createElement("div");
   div.innerHTML = response;
   let anchors = div.getElementsByTagName("a")
   let cardcontainer = document.querySelector(".cardcontainer")
- let array =  Array.from(anchors)
+  let array =  Array.from(anchors)
     for (let index = 0; index < array.length; index++) {
       const e = array[index];
     // console.log(e.href);
-    if(e.href.includes("/songs") && !e.href.includes(".htaccess")){
+    if(e.href.includes("/songs")){
      let folder = (e.href.split("/").slice(-2)[0])
       // get metadata of folder
-      let a = await fetch(`/Spotify/songs/${folder}/info.json`);
+      let a = await fetch(`/songs/${folder}/info.json`);
       let response = await a.json();
       console.log(response);
       cardcontainer.innerHTML = cardcontainer.innerHTML + `<div data-folder= "${folder}" class="card">
@@ -102,7 +102,7 @@ async function displayAlbums(){
               </svg>
             </div>
             <img
-              src="/Spotify/songs/${folder}/cover.jpeg"
+              src="/songs/${folder}/cover.jpeg"
               alt=""
             />
             <h3>${response.title}</h3>
