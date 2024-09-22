@@ -22,7 +22,7 @@ function formatTime(seconds) {
 }
 async function getsongs(folder) {
   currFolder = folder;
-  let a = await fetch(`/${folder}/`);
+  let a = await fetch("/songs/cs/");
   let response = await a.text();
   // console.log(a)
   // console.log(response) 
