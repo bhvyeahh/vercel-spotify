@@ -37,23 +37,20 @@ async function getsongs(folder) {
       songs.push(element.href.split(`/${folder}/`)[1]);
     }
   }
-  let songUL = document.querySelector(".songlist").getElementsByTagName("ul")[0]
-  songUL.innerHTML = ""
-  for (const song of songs) {
-      songUL.innerHTML = songUL.innerHTML + `<li><img class="invert" src="music.svg" alt="">
-              <div class="info">
-              <div class="songName">
-              ${song.replaceAll("%20", " ")}
-                </div>
-                <div class="songArtist">
-                
-                </div>
-              </div>
-              <div class="playnow">
-                <img class="invert" src="play.svg" alt="">
-              </div>
-              </li>`;
-  }
+// Show all the songs in the playlist
+    let songUL = document.querySelector(".songList").getElementsByTagName("ul")[0]
+    songUL.innerHTML = ""
+    for (const song of songs) {
+        songUL.innerHTML = songUL.innerHTML + `<li><img class="invert" width="34" src="img/music.svg" alt="">
+                            <div class="info">
+                                <div> ${song.replaceAll("%20", " ")}</div>
+                                <div>Harry</div>
+                            </div>
+                            <div class="playnow">
+                                <span>Play Now</span>
+                                <img class="invert" src="img/play.svg" alt="">
+                            </div> </li>`;
+    }
   // Attaching a event listener
   Array.from(document.querySelector(".songlist").getElementsByTagName("li")).forEach(e=>{
     e.addEventListener("click", element=>{
