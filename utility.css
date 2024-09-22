@@ -36,6 +36,7 @@
     transition: all 10s ease-in ease-out;
     }
     .card:hover{
+        cursor: pointer;
         transition: all .4s ease-out;
         background-color: rgb(26, 23, 26);
     }
