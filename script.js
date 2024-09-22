@@ -22,7 +22,7 @@ function formatTime(seconds) {
 }
 async function getsongs(folder) {
   currFolder = folder;
-  let a = await fetch(`http://127.0.0.1:3000/Spotify/${folder}/`);
+  let a = await fetch(`/${folder}/`);
   let response = await a.text();
   // console.log(a)
   // console.log(response) 
@@ -75,7 +75,7 @@ const playMusic = (track, pause = false)=>{
 }
 
 async function displayAlbums(){
-  let a = await fetch(`http://127.0.0.1:3000/Spotify/songs/`);
+  let a = await fetch(`/Spotify/songs/`);
   let response = await a.text();
   // console.log(response) 
   let div = document.createElement("div");
@@ -86,8 +86,8 @@ async function displayAlbums(){
     for (let index = 0; index < array.length; index++) {
       const e = array[index];
     // console.log(e.href);
-    if(e.href.includes("/songs")){
-      folder = (e.href.split("/").slice(-2)[0])
+    if(e.href.includes("/songs") && !e.href.includes(".htaccess")){
+     let folder = (e.href.split("/").slice(-2)[0])
       // get metadata of folder
       let a = await fetch(`/Spotify/songs/${folder}/info.json`);
       let response = await a.json();
