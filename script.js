@@ -61,6 +61,7 @@ async function getsongs(folder) {
       playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim())
     })
   })
+  return songs
 }
 
 const playMusic = (track, pause = false)=>{
@@ -114,6 +115,7 @@ async function displayAlbums(){
         e.addEventListener("click",async item=>{
           console.log(item, item.currentTarget.dataset)
           songs = await getsongs(`songs/${item.currentTarget.dataset.folder}`)
+          playMusic(songs[0])
         })
       })
 }
@@ -122,7 +124,7 @@ async function main() {
   playMusic(songs[0], true)
 
   // Displaying all the album on page
-  displayAlbums()
+ await displayAlbums()
 
  
     // Attaching an event listener to play, next, previous
