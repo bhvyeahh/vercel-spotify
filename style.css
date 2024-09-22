@@ -12,7 +12,7 @@ padding: 0;
 }
 .logo{
     display: flex;
-    gap: 150px;
+    justify-content: space-between;
 }
 .logo .close{
     display: none;
@@ -200,6 +200,7 @@ padding: 0;
     gap: 20px;
     height: 28px;
 }
+
 .songlist{
     padding: 0;
 }
@@ -232,7 +233,12 @@ padding: 0;
     align-items: center; 
 } 
 .playnow:hover {
+    /* background-color: red; */
     filter: invert(48%) sepia(88%) saturate(3072%) hue-rotate(77deg) brightness(98%) contrast(245%);
+}
+.trackname{
+    width: 217px;
+
 }
 .seekbar{
     height: 2px;
@@ -253,6 +259,7 @@ padding: 0;
     position: relative;
     bottom: 3px;
     left: 0%;
+    transition: all .7s;
 }
 .songbuttons{
     width: 20px;
@@ -260,7 +267,7 @@ padding: 0;
 }
 .songinfo{
     padding: 0 6px;
-     width: 70vw;
+    width: 70vw;
     height: 40px; 
     display: flex;
     justify-content: space-between;
@@ -268,12 +275,45 @@ padding: 0;
     /* background-color: blue; */
     color: black;
 }
-.songtime{
+.songtime {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100px;
     color: white;
 }
 .trackname{
     color: white;
 }
+.vol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.range{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vol img{
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time-vol{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    /* flex-direction: ; */
+}
+.range{
+    cursor: pointer;
+}
+
 
 /* Responsiveness */
 @media (max-width: 1300px) {
@@ -318,9 +358,47 @@ padding: 0;
     }
     .playbar{
         gap: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 92vw;
+    }
+    .songinfo{
+        justify-content: space-between;
+        width: 75vw;
+    }
+    .songtime{
+        display: none;
     }
     .songbuttons img{
-        width: 25px;
+        width: 20px;
+    }
+    .trackname{
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: flex;
+        width: 170px;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+    }
+    .vol img{
+        display: none;
+        width: 0;
+    }
+    .range{
+        display: none;
+        width: 0;
+    }
+    .time-vol{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 0;
+        flex-direction: column;
     }
 
+
+
+    
 }
