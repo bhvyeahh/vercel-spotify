@@ -21,7 +21,7 @@ function formatTime(seconds) {
 async function getsongs(folder) {
   currFolder = folder;
   console.log(folder);
-  let a = await fetch(`https://github.com/bhvyeahh/vercel-spotify2/main/${folder}/`);
+  let a = await fetch(`https://raw.githubusercontent.com/bhvyeahh/vercel-spotify2/main/${folder}/`);
   let response = await a.text();
 
   let div = document.createElement("div");
@@ -86,7 +86,7 @@ async function displayAlbums() {
 
   for (let index = 0; index < array.length; index++) {
     const e = array[index];
-    if (e.href.includes("/songs") && !e.href.includes(".htaccess")) {
+if (e.href.includes("/songs") && !e.href.includes(".htaccess")) {
       let folder = e.href.split("/").slice(-2)[0];
 
       let a = await fetch(`https://raw.githubusercontent.com/bhvyeahh/vercel-spotify2/main/songs/${folder}/info.json`);
