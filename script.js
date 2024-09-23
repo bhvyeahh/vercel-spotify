@@ -21,7 +21,7 @@ function formatTime(seconds) {
 async function getsongs(folder) {
   currFolder = folder;
   console.log(folder);
-  let a = await fetch(`https://raw.githubusercontent.com/bhvyeahh/vercel-spotify2/main/${folder}/`);
+  let a = await fetch(`https://github.com/bhvyeahh/vercel-spotify2/main/${folder}/`);
   let response = await a.text();
 
   let div = document.createElement("div");
